@@ -6,8 +6,7 @@ import "./styles/globals.css";
 
 // This is the chainId your dApp will work on.
 const desiredChainId =
-  document.currentScript?.getAttribute('data-desired-chain-id') || ChainId.Mumbai;
-
+  parseInt(document.currentScript?.getAttribute('data-desired-chain-id')) || ChainId.Mumbai;
 
 const elementId = 'lazer-thirdwed-token-gating-app';
 const container = document.createElement('div');
